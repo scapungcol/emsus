@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACL,UAAU,EAAC,IAAI;EACf,UAAU,EACT,yFAGO;EAER,qBAAqB,EAAC,KAAK;EAC3B,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAC,OAAO;EAC3B,OAAO,EAAE,SAAS",
+"sources": ["../sass/think.scss"],
+"names": [],
+"file": "think.css"
+}

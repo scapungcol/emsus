@@ -313,6 +313,9 @@ h3.contactheader {
   .hidelarge {
     display: block; }
 
+  br.hidesmall {
+    display: none; }
+
   .whoweare, .whatwedo {
     background-size: cover; }
 
@@ -320,7 +323,7 @@ h3.contactheader {
     text-align: center;
     width: 100%; }
 
-  .meow {
+  .checkrow {
     margin-bottom: 40px; }
 
   h3.contactheader {
@@ -350,5 +353,14 @@ h3.contactheader {
     float: initial;
     margin: 0 auto;
     padding-right: 2rem; } }
+@media (max-width: 400px) {
+  .headertext {
+    height: 180px; }
+    .headertext h1 {
+      font-size: 1.6em;
+      letter-spacing: 15px; }
+
+  select {
+    width: 125px; } }
 
 /*# sourceMappingURL=main.css.map */
