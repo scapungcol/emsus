@@ -225,3 +225,11 @@ select {display:none;}
 		float:none; text-align:center;
 	}
 }
+
+@media (max-width:400px) {
+
+	select {
+	    width: 125px;
+	}
+
+}

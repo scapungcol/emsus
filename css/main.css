@@ -1,7 +1,3 @@
-/*TODO
-
-> add in favicon
-*/
 /* base & nav & footer .scss */
 @font-face {
   font-family: 'Caviar_Dreams_Bold-webfont';
@@ -168,6 +164,9 @@ select {
   .social, .r_footer {
     float: none;
     text-align: center; } }
+@media (max-width: 400px) {
+  select {
+    width: 125px; } }
 /*          <<<< HERO BAR >>>>>     */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.65)), url(../img/home_welcome.jpg);
@@ -358,9 +357,6 @@ h3.contactheader {
     height: 180px; }
     .headertext h1 {
       font-size: 1.6em;
-      letter-spacing: 15px; }
-
-  select {
-    width: 125px; } }
+      letter-spacing: 15px; } }
 
 /*# sourceMappingURL=main.css.map */

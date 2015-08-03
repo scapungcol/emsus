@@ -164,6 +164,9 @@ select {
   .social, .r_footer {
     float: none;
     text-align: center; } }
+@media (max-width: 400px) {
+  select {
+    width: 125px; } }
 .bold {
   font-weight: 600; }
 
