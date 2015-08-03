@@ -1,0 +1,255 @@
+/*TODO
+
+> add in favicon
+*/
+@import 'base';
+
+
+
+/*          <<<< HERO BAR >>>>>     */
+
+.hero {
+	background:
+		linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.65)
+        ),
+		url(../img/home_welcome.jpg);
+	background-attachment:fixed;
+	background-size: cover;
+	background-position:50% 50%;
+	padding: 80px 30px;
+	margin-bottom:60px;
+	width:100%;
+}
+
+.headertext {
+	height:250px;
+	margin: auto;
+	text-align:center;
+	width:100%;
+
+	h1 {
+		color: white;
+		font-family: $brandfont-stack;
+		font-size: 4em;
+		letter-spacing: 30px;
+		text-align:center;
+		text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.76);
+		text-transform: uppercase;
+	}
+
+	p {
+		color:white;
+		font-size:1.5em;
+		letter-spacing:.5px;
+		line-height:1.5;
+		text-align: center;
+		text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.76);
+	}
+
+	a, a.formbutton {
+		font-size:.8em;
+		letter-spacing: .25em;
+		text-transform: uppercase;
+	}
+}
+
+/*          <<<< first row >>>>>     */
+
+
+.imgheader {
+	margin-bottom:30px;
+	padding:60px 0;
+
+	p{
+		color: white;
+		font-size: 1.25em;
+		letter-spacing: 5px;
+		margin-bottom:0;
+		text-align:center;
+		text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.76);
+		text-transform: uppercase;
+	}
+
+}
+
+.whoweare {
+	background: url(../img/home_whoweare.jpg), no-repeat;
+}
+
+.whatwedo {
+	background: url(../img/home_whatwedo.jpg), no-repeat;
+}
+
+.imgunder {
+
+	a {
+		color:green;
+		float:right;
+		font-style:italic;
+		font-weight:bold;
+	}
+
+	p {
+		margin-top:30px;
+	}
+}
+
+/*          <<<< second row >>>>>     */
+
+.secondrow, .contactform{
+	position: relative;
+}
+
+.whysus h3 {
+	color:green;
+	font-size:1.5em;
+	font-weight:600;
+	margin-top:0px;
+	text-align:center;
+}
+
+.whysus ul {margin-left:2rem;}
+
+.whysus ul li {
+	color:green;
+	list-style-image:url(http://emeraldsustainability.com/wp-content/themes/emerald/images/leaf.png);
+	padding-bottom:20px;
+	padding-left:20px;
+}
+
+.whysus ul li:first-of-type {
+	padding-top:30px;
+}
+
+
+h3.contactheader{
+	font-size:1em;
+	margin-bottom:30px;
+	text-align:left;
+}
+
+.formbutton {
+	margin-bottom:80px;
+	padding: .6rem 2rem 0.6625rem 2rem;
+}
+
+
+.logowrap{
+  	position: absolute;
+  	right: 8.25%;
+  	top: 75px;
+}
+
+.contactlogo {
+	@extend .brandlogo;
+	height:98px;
+    margin-top: 0px;
+    width: 150px;
+}
+
+.uswrap{
+  	position: absolute;
+  	bottom: 20px;
+  	right: 6.25%;
+}
+
+.uslogo{
+	background: url(http://www.emeraldsustainability.com/wp-content/themes/emerald/images/usgbc.png) no-repeat;
+  	background-size: contain;
+	float: right;
+	height: 75px;
+ 	width: 75px;
+}
+
+
+@media (min-width:1024px) {
+	.uswrap {right:3%}
+}
+
+@media (max-width: 1024px) {
+
+	.uswrap {
+		right:2%;
+	}
+
+	.hero {
+		padding: 80px 15px;
+	}
+
+	.contactlogo {
+		display:none;
+	}
+
+}
+
+@media (max-width:640px) {
+
+	.headertext {
+		height:150px;
+
+		h1 {
+			font-size: 2.5em;
+			letter-spacing: 20px;
+		}
+
+		p {
+			font-size:.9em;
+			line-height:1.75;
+		}
+
+		a, a.formbutton {
+			font-size:.8em;
+			letter-spacing: .25em;
+			text-transform: uppercase;
+		}
+	}
+
+	.hidelarge {
+		display:block;
+	}
+
+	.whoweare, .whatwedo {
+		background-size: cover;
+	}
+
+	.imgunder a{
+		text-align:center;
+		width:100%
+	}
+
+	.meow  {
+		margin-bottom:40px;
+	}
+
+	h3.contactheader { text-align:center; }
+
+	textarea { margin-bottom:110px; }
+
+	.contactbutton {
+		position:relative;
+		margin:0 auto;
+		width: 60%;
+	}
+
+	.formbutton {
+		bottom:50%;
+  		left: 50%;
+		margin: 0px 0 40px -35%;
+		position: absolute;
+  		width:70%;
+  	}
+
+	.uswrap {
+		position: relative;
+		right: 0%;
+		width: 100%;
+	}
+
+	.uslogo {
+		float:initial;
+		margin:0 auto;
+		padding-right: 2rem;
+	}
+}

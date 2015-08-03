@@ -1,0 +1,13 @@
+think {
+	margin-top:50px;
+	background:
+		linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.65)
+        ),
+		url(../img/ourteam_header.jpg);
+	background-attachment:fixed;
+	background-size: cover;
+	background-position:80% 75%;
+	padding: 30px 30px;
+}

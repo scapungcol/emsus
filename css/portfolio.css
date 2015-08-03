@@ -1,0 +1,12 @@
+.example-orbit-content {
+  background: url(http://placehold.it/1200x400); }
+
+.think img, .volko img, .medical img, .residential img {
+  position: absolute;
+  z-index: -1; }
+.think h5, .volko h5, .medical h5, .residential h5 {
+  padding: 50px 0px 15px 50px; }
+.think p, .volko p, .medical p, .residential p {
+  padding: 0 50px 30px 50px; }
+
+/*# sourceMappingURL=portfolio.css.map */

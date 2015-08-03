@@ -1,0 +1,89 @@
+/***** define scss variables *****/
+/*          <<<< HERO BAR >>>>>     */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.65)), url(../img/contactus_hero.jpg);
+  background-size: cover; }
+
+.headertext h1 {
+  padding-top: 80px; }
+
+/*          <<<< first row >>>>>     */
+.connectwithus {
+  background: url(../img/contactus_connectwithus.jpg), no-repeat;
+  background-size: cover; }
+
+.meow {
+  position: relative; }
+
+.socialconnect {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding-top: 60px; }
+  .socialconnect ul li {
+    margin-left: 40px; }
+  .socialconnect ul li:first-of-type {
+    margin-left: 0px; }
+
+.social-i {
+  color: #368a55; }
+
+@media (min-width: 1024px) {
+  .uswrap {
+    right: 3%; } }
+@media (max-width: 1024px) {
+  .uswrap {
+    right: 2%; }
+
+  .hero {
+    padding: 80px 15px; }
+
+  .contactlogo {
+    display: none; } }
+@media (max-width: 640px) {
+  .headertext h1 {
+    padding-top: 50px; }
+
+  .hidelarge {
+    display: block; }
+
+  .connectwithus {
+    background-size: cover; }
+
+  .imgunder a {
+    text-align: center;
+    width: 100%; }
+
+  .meow {
+    margin-bottom: 90px; }
+
+  h3.contactheader {
+    text-align: center; }
+
+  textarea {
+    margin-bottom: 110px; }
+
+  .contactbutton {
+    position: relative;
+    margin: 0 auto;
+    width: 60%; }
+
+  .formbutton {
+    bottom: 50%;
+    left: 50%;
+    margin: 0px 0 40px -35%;
+    position: absolute;
+    width: 70%; }
+
+  .uswrap {
+    position: relative;
+    right: 0%;
+    width: 100%; }
+
+  .uslogo {
+    float: initial;
+    margin: 0 auto;
+    padding-right: 2rem; } }
+
+/*# sourceMappingURL=contactus.css.map */

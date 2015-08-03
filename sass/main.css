@@ -1,0 +1,396 @@
+/*TODO
+> breakpoint tiny menu
+> breakpoint tiny center
+> spacing around grey lines
+> bkpt_tiny contact contactlogo
+> bkpt_tiny contact send 
+> bkpt_tiny uslogo center
+> bkpt_tiny
+*/
+
+@font-face{
+	font-family: 'Caviar_Dreams_Bold-webfont';
+	src: url('Caviar_Dreams_Bold-webfont.eot');
+	src: url('Caviar_Dreams_Bold-webfont.eot?iefix') format('eot'),
+	     url('Caviar_Dreams_Bold-webfont.woff') format('woff'),
+	     url('Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+	     url('Caviar_Dreams_Bold-webfont.svg#webfont') format('svg');
+}
+
+/***** define scss variables *****/
+$brandfont-stack:    'Caviar_Dreams_Bold-webfont', sans-serif;
+$font-stack: 'Open Sans', sans-serif;
+$primary-color: #333;
+
+
+
+* {
+	transition: all 1s ease;
+}
+
+h1,h2,h3,h4,p,a,li,body {
+	font-family: $font-stack;
+	color: grey;
+}
+
+p, a{
+	font-size:.85em;
+}
+
+/*CUSTOM FOUNDATION CODE*/
+
+.fullrow {
+	max-width:100%;
+}
+
+/*// .elserow {
+// 	max-width: 62.5rem;
+// 	overflow:hidden;
+// 	position:relative;
+// 	margin:0 auto;
+// }*/
+
+hr.greydivider {
+	width:60%;
+	color:rgb(240,240,240);
+	margin:40px auto;
+}
+
+/*PAGE CODE*/
+
+nav {
+	background:white;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height:100px;
+	border-radius: 0;
+	padding-top:10px;
+	z-index:1;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.navmenu {
+	width:87.5%;
+	margin:0 auto;
+	padding:0 15px;
+}
+
+.navmenu-header {
+    float:left;
+}
+
+.brandlogo {
+    background-image:url(../img/1LOGO.png);
+    height:70px;
+    overflow:hidden;
+    text-indent:100%;
+    width:107px;
+    display:block;
+    white-space:nowrap;
+    background-size:contain;
+    margin-top:5px;
+}
+
+
+.r_menu {
+	float:right;
+	margin-top:25px;
+}
+
+.r_menu li {
+	display:inline-block;
+	box-sizing: border-box;
+}
+
+.r_menu > li > a, .submenu > li > a {
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  font-size:.8em;
+}
+
+
+
+.r_menu > li > a:hover, .submenu > li > a:hover {
+	font-weight:600;
+	color:green;
+	transition:none;
+}
+
+.submenu > li > a {
+  font-size:.75em;
+  padding: 10px 20px;
+}
+
+ul.submenu {
+	min-width: 125px;
+	background: white;
+	display: none;
+	position:absolute;
+	z-index:999;
+	padding:10px;
+}
+
+.r_menu li:hover ul.submenu,.r_menu li ul.submenu li {
+	display:block;
+}
+
+/*          <<<< HERO BAR >>>>>     */
+
+.hero {
+	width:100%;
+	background:
+		linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.65)
+        ),
+		url(../img/home_welcome.jpg);
+	background-attachment:fixed;
+	background-size: cover;
+	background-position:50% 50%;
+	padding: 80px 30px;
+	margin-bottom:60px;
+}
+
+.headertext {
+	margin: auto;
+	width:600px;
+	height:250px;
+	text-align:center;
+}
+
+.headertext h1 {
+	font-family: 'Caviar_Dreams_Bold-webfont', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 30px;
+	color: white;
+	font-size: 4em;
+	text-align:center;
+	text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.76);
+}
+
+.headertext p {
+	color:white;
+	text-align: center;
+	line-height:1.5;
+	font-size:1.5em;
+	letter-spacing:.5px;
+	text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.76);
+}
+
+.headertext a, a.formbutton {
+	text-transform: uppercase;
+	font-size:.8em;
+	letter-spacing: .25em;
+}
+
+.imgheader {
+	padding:60px 0;
+	margin-bottom:30px;
+}
+
+.whoweare {
+	background: url(../img/home_whoweare.jpg);
+	background-repeat: no-repeat;
+}
+
+
+
+.whatwedo {
+	background: url(../img/home_whatwedo.jpg), no-repeat;;
+}
+
+
+
+.imgheader p{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: white;
+	font-size: 1.25em;
+	text-align:center;
+	margin-bottom:0;
+	text-shadow: 0px 0px 10px rgba(150, 150, 150, 0.76);
+}
+
+.imgunder p{
+	margin-top:30px;
+}
+
+.imgunder a{
+	color:green;
+	font-style:italic;
+	font-weight:bold;
+	float:right;
+}
+
+.whysus h3 {
+	color:green;
+	font-size:1.5em;
+	text-align:center;
+	font-weight:600;
+}
+
+.whysus ul li {
+	color:green;
+	list-style-image:url(http://emeraldsustainability.com/wp-content/themes/emerald/images/leaf.png);
+	padding-bottom:20px;
+	padding-left:20px;
+	margin-left:20px;
+}
+
+.whysus ul li:first-of-type {
+	padding-top:30px;
+}
+
+h3.contactheader{
+	font-size:1em;
+	margin-bottom:30px;
+}
+
+.forming {
+	padding-left:0;
+}
+
+.formbutton {
+	padding: .6rem 2rem 0.6625rem 2rem;
+	margin-bottom:80px;
+}
+
+.something{
+	position: relative;
+}
+
+.uswrap{
+  position: absolute;
+  right: 6.25%;
+  bottom: 20px;
+}
+
+.uslogo{
+	height: 75px;
+ 	width: 75px;
+  	float: right;
+  	background: url(http://www.emeraldsustainability.com/wp-content/themes/emerald/images/usgbc.png) no-repeat;
+  	background-size: contain;
+}
+
+
+
+.contactlogo {
+	background-image:url(../img/1LOGO.png);
+	display:block;  height: 98px;
+  width: 150px;
+  overflow:hidden;
+  text-indent:110%;
+  margin-top: 0px;
+  white-space:nowrap;
+  background-size:contain;
+}
+
+.logo{
+  position: absolute;
+  right: 8.25%;
+  top: 75px;
+}
+
+
+.footer{
+	background:
+        rgb(245,245,245);
+    border-top:2px solid rgb(230,230,230);
+	clear:both;
+}
+
+.navfooter {
+	width:87.5%;
+	margin:0 auto;
+	padding:0 15px;
+}
+
+.social {
+	color:green;
+	float:left;
+	padding:10px 0;
+}
+
+.social ul {
+	list-style:none;
+	margin:0 20px 0 0;
+}
+
+.social ul li {
+	display:inline-block;
+}
+
+.r_footer p{
+	margin-bottom:0;
+}
+
+.r_footer {
+	float:right;
+	padding-top:12px;
+}
+
+.hidelarge {
+	display: none;
+}
+
+
+@media (max-width: 960px) {
+/*	.logo {display:none;}
+*/
+	.navfooter, .navmenu {
+		width:98%;
+	}
+
+	.uswrap {
+		right:2%;
+	}
+
+	.r_menu {
+		margin-left:0;
+	}
+
+	.r_menu > li > a, .submenu > li > a {
+  		padding: 10px;
+	}
+
+	.hero {
+		padding: 80px 15px;
+	}
+
+	.contactlogo {
+		height: 65px;
+	  	width: 100px;
+	  	text-indent:110%;
+	}
+
+	.logo {
+		left:62.5%;
+		top:90px;;
+	}
+}
+
+@media (max-width:640px) {
+	.hidelarge {
+		display:block;
+	}
+	.whoweare, .whatwedo {
+		background-size: cover;
+	}
+
+	.imgunder a{
+		margin-left:45%;
+		float:left;
+	}
+
+	.meow  {
+		margin-bottom:40px;
+	}
+	.contactlogo {display:none;}
+	.formbutton {margin-left:40%;}
+}

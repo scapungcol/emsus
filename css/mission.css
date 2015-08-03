@@ -1,0 +1,292 @@
+/* base & nav & footer .scss */
+@font-face {
+  font-family: 'Caviar_Dreams_Bold-webfont';
+  src: url("Caviar_Dreams_Bold-webfont.eot");
+  src: url("Caviar_Dreams_Bold-webfont.eot?iefix") format("eot"), url("Caviar_Dreams_Bold-webfont.woff") format("woff"), url("Caviar_Dreams_Bold-webfont.ttf") format("truetype"), url("Caviar_Dreams_Bold-webfont.svg#webfont") format("svg"); }
+/***** define scss variables *****/
+/***** basic elements *****/
+* {
+  transition: all 1s ease; }
+
+h1, h2, h3, h4, p, a, li, body {
+  font-family: "Open Sans", sans-serif;
+  color: grey; }
+
+p, a {
+  font-size: .85em; }
+
+/***** page code *****/
+.fullrow {
+  max-width: 100%; }
+
+hr.greydivider {
+  width: 60%;
+  color: #f0f0f0;
+  margin: 40px auto; }
+
+.hidelarge {
+  display: none; }
+
+/*------------ nav bar ------------*/
+nav {
+  background: white;
+  height: 100px;
+  padding-top: 10px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(30, 30, 30, 0.15);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(30, 30, 30, 0.15);
+  box-shadow: 0px 3px 5px 0px rgba(30, 30, 30, 0.15); }
+
+.navmenu {
+  padding: 0 15px;
+  width: 87.5%;
+  margin: 0 auto; }
+
+.navmenu-header {
+  float: left; }
+
+.brandlogo {
+  background-image: url(../img/1LOGO.png);
+  background-size: contain;
+  display: block;
+  height: 70px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-indent: 110%;
+  width: 107px;
+  white-space: nowrap; }
+
+.r_menu {
+  float: right;
+  margin-top: 25px; }
+  .r_menu li {
+    box-sizing: border-box;
+    display: inline-block; }
+
+.r_menu > li > a, .submenu > li > a {
+  font-size: .8em;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  padding: 20px;
+  text-transform: uppercase; }
+
+.r_menu > li > a:hover, .submenu > li > a:hover {
+  color: green;
+  font-weight: 600;
+  transition: none; }
+
+.submenu > li > a {
+  font-size: .75em;
+  padding: 10px 20px; }
+
+ul.submenu {
+  background: white;
+  display: none;
+  min-width: 125px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2; }
+
+.r_menu li:hover ul.submenu, .r_menu li ul.submenu li {
+  display: block; }
+
+.active {
+  font-weight: 400; }
+
+select {
+  display: none; }
+
+/*------------ footer ------------*/
+.footer {
+  background: #f0f0f0;
+  border-top: 2px solid #e6e6e6;
+  clear: both;
+  height: 50px; }
+
+.navfooter {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 87.5%; }
+
+.social {
+  float: left;
+  padding: 10px 0; }
+  .social ul {
+    list-style: none;
+    margin: 0 20px 0 0; }
+    .social ul li {
+      display: inline-block; }
+
+.fa-square {
+  color: #afafaf; }
+
+.r_footer {
+  float: right;
+  padding-top: 12px; }
+  .r_footer p {
+    margin-bottom: 0; }
+
+/*------------ media queries ------------*/
+@media (min-width: 1024px) {
+  .navfooter, .navmenu {
+    width: 1003.52px; }
+
+  hr.greydivider {
+    width: 40%; } }
+@media (max-width: 1024px) {
+  .navfooter, .navmenu {
+    width: 98%; }
+
+  .r_menu {
+    margin-left: 0; }
+
+  .r_menu > li > a, .submenu > li > a {
+    padding: 10px; } }
+@media (max-width: 640px) {
+  .r_menu {
+    display: none; }
+
+  select {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    width: 175px; }
+
+  .hidelarge {
+    display: block; }
+
+  .footer {
+    height: 100px; }
+
+  .social, .r_footer {
+    float: none;
+    text-align: center; } }
+.bold {
+  font-weight: 600; }
+
+h2 {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  text-align: center; }
+
+.backgroundmission {
+  background: url(../img/mission_back.jpg);
+  background-size: cover;
+  background-position: 50% 60%;
+  padding: 75px 120px 20px 120px;
+  width: 100%; }
+
+.backgroundhistory {
+  background: url(../img/history_back.jpg);
+  background-size: cover;
+  padding: 75px 120px 20px 120px;
+  width: 100%; }
+
+.frostedpane {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px 7.5%; }
+
+.bottombutton {
+  width: 80%;
+  margin: 15px 10%; }
+
+a.bottombutton {
+  font-family: "Open Sans", sans-serif;
+  font-size: .8em;
+  font-weight: 600; }
+
+.earth {
+  float: right;
+  margin-left: 20px; }
+
+.windmill {
+  float: left;
+  margin-right: 20px; }
+
+.logowrap {
+  z-index: 3;
+  text-align: center; }
+
+.diamond {
+  padding: 0 48.5%;
+  margin: 30px auto; }
+
+.contactlogo {
+  background-image: url(../img/1LOGO_Full.png);
+  background-size: contain;
+  display: block;
+  height: 141px;
+  overflow: hidden;
+  text-indent: 110%;
+  width: 194px;
+  white-space: nowrap;
+  margin: 0 auto 30px auto; }
+
+.uswrap {
+  position: relative;
+  right: 0%;
+  width: 100%; }
+
+.uslogo {
+  background: url(../img/usgbc.png) no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 75px;
+  float: initial;
+  margin: 30px auto 10px auto; }
+
+@media (min-width: 1024px) {
+  .backgroundmission {
+    background: url(../img/mission_back.jpg);
+    background-repeat: no-repeat;
+    background-size: 1024px auto;
+    background-position: 50% 60%;
+    padding: 75px 120px 20px 120px; }
+
+  .backgroundhistory {
+    background: url(../img/history_back.jpg);
+    background-repeat: no-repeat;
+    background-size: 1024px auto;
+    background-position: 50% 60%;
+    padding: 75px 120px 20px 120px; }
+
+  .frostedpane {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 900px;
+    padding: 30px 7.5%;
+    margin: 0 auto; } }
+@media (max-width: 960px) {
+  .backgroundmission, .backgroundhistory {
+    padding: 75px 10% 20px 10%; }
+
+  .earth {
+    width: 20%; }
+
+  .windmill {
+    width: 12.5%; } }
+@media (max-width: 640px) {
+  .backgroundmission, .backgroundhistory {
+    padding: 75px 0 20px 0; }
+
+  .hidesmall {
+    display: none; }
+
+  .earth {
+    margin: 10px 40% 30px 40%; }
+
+  .windmill {
+    margin: 10px 43.75% 30px 43.75%; } }
+
+/*# sourceMappingURL=mission.css.map */
