@@ -1,12 +1,183 @@
-.example-orbit-content {
-	background: url(http://placehold.it/1200x400);
+@import 'base';
+
+$font-stack: 'Open Sans', sans-serif;
+
+
+//MIN WIDTH @ 1024 PX
+
+
+.services{
+	margin-bottom:30px;
+}
+
+.methodology {
+	background: url(../img/services_methodology.jpg);
+	background-size: cover;
+	padding: 0 0 0 35%;
+}
+
+.menuofservices {
+	background: url(../img/services_menu.jpg);
+	background-size: cover;
+	background-position:10% 90%;
+	padding: 0 0 0 35%;
 }
 
 .think {
-	img {position:absolute; z-index: -1;}
-	h5 {padding:50px 0px 15px 50px;}
-	p {padding:0 50px 30px 50px;}
+	background: url(../img/portfolio_think.jpg);
+	background-size:cover;
+	padding:30px;
 }
-.volko {@extend .think;}
-.medical {@extend .think;}
-.residential {@extend .think;}
+.volko {
+	background: url(../img/portfolio_volvo.jpg);
+	background-size:cover;
+	padding:30px;
+}
+.medical {
+	background: url(../img/portfolio_medical.jpg);
+	background-size:cover;
+	padding:30px;
+}
+.residential {
+	background: url(../img/portfolio_residential.jpg);
+	background-size:cover;
+	padding:30px;
+}
+
+h3.nobackheader {
+    font-size: 1.2em;
+    margin: 40px auto 0px auto;
+    text-align: center;
+    width: 80%;
+}
+
+h4.navbottomheader {
+	font-size: 1.25em;
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+.slider h4 {
+	font-size:1.25em;
+	margin-bottom:20px;
+}
+
+.learnmore-btn {
+	background: url(../img/portfolio_mail.png), no-repeat;
+    height: 76px;
+    width: 94px;
+    margin: 0 auto 20px auto;
+}
+
+.contactus-btn {
+	background: url(../img/portfolio_people.png), no-repeat;
+    height: 76px;
+    width: 135px;
+    margin: 0 auto 20px auto;
+}
+
+.headertext {
+	text-align:center;
+	a {
+		font-family: $font-stack;
+		font-size: .9em;
+	    padding: 15px 30px;
+	}
+}
+
+.frostedpane {
+	background-color: rgba(256,256,256,.85);
+	padding:30px 40px 20px 40px;
+	h5 {padding-bottom:15px;}
+}
+
+.slider {
+	padding:20px;
+	background-color: rgba(240,240,240,.85);
+}
+
+.slidetoggles {
+	float:right;
+	padding-left:10px;
+	width:20%;
+
+	a{
+		font-family: $font-stack;
+		margin-bottom:5px;
+		width:100%;
+	}
+}
+
+.slideshow {
+	float:left;
+	width:80%;
+}
+
+.uswrap {
+    position: relative;
+    right: 0%;
+    width: 100%;
+}
+
+.uslogo {
+    background: url(../img/usgbc.png) no-repeat;
+    background-size: contain;
+    height: 75px;
+    width: 75px;
+    float: initial;
+    margin: 0px auto 30px auto;
+}
+
+
+@media (max-width:960px) {
+	.slidetoggles {
+		display: flex;
+	    float: none;
+	    padding-left:0px;
+	    width:100%;
+	    a {margin-left:10px;}
+	    a:first-child {margin-left:0px;}
+	}
+
+	.slideshow {width:100%;}
+}
+
+@media (max-width:640px) {
+	.slider {
+		h4{text-align:center;}
+	}
+
+	.slidetoggles {
+		display: inline;
+		a {margin-left:0px;}
+	}
+
+	.slideshow {
+		margin-top:20px;
+		h5{text-align:center;}
+	}
+
+	.methodology, .menuofservices {
+		padding: 30px;
+	}
+
+}
+
+@media (max-width:500px) {
+	.frostedpane h5 {
+		padding-bottom: 15px;
+		text-align: center;
+	}
+
+	.think, .volko, .medical, .residential {
+		padding:40px 0px 30px 0;
+	}
+	.frostedpane {
+		padding:30px 20px 20px 20px;
+	}
+
+	.methodology, .menuofservices {
+		padding: 30px 0;
+	}
+
+}

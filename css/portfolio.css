@@ -1,12 +1,323 @@
-.example-orbit-content {
-  background: url(http://placehold.it/1200x400); }
+/* base & nav & footer .scss */
+@font-face {
+  font-family: 'Caviar_Dreams_Bold-webfont';
+  src: url("Caviar_Dreams_Bold-webfont.eot");
+  src: url("Caviar_Dreams_Bold-webfont.eot?iefix") format("eot"), url("Caviar_Dreams_Bold-webfont.woff") format("woff"), url("Caviar_Dreams_Bold-webfont.ttf") format("truetype"), url("Caviar_Dreams_Bold-webfont.svg#webfont") format("svg"); }
+/***** define scss variables *****/
+/***** basic elements *****/
+* {
+  transition: all 1s ease; }
 
-.think img, .volko img, .medical img, .residential img {
+h1, h2, h3, h4, p, a, li, body {
+  font-family: "Open Sans", sans-serif;
+  color: grey; }
+
+p, a {
+  font-size: .85em; }
+
+.bold {
+  font-weight: 400; }
+
+.bolder {
+  font-weight: 600; }
+
+/***** page code *****/
+.fullrow {
+  max-width: 100%; }
+
+hr.greydivider {
+  width: 60%;
+  color: #f0f0f0;
+  margin: 40px auto; }
+
+.hidelarge {
+  display: none; }
+
+/*------------ nav bar ------------*/
+nav {
+  background: white;
+  height: 100px;
+  padding-top: 10px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(30, 30, 30, 0.15);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(30, 30, 30, 0.15);
+  box-shadow: 0px 3px 5px 0px rgba(30, 30, 30, 0.15); }
+
+.navmenu {
+  padding: 0 15px;
+  width: 87.5%;
+  margin: 0 auto; }
+
+.navmenu-header {
+  float: left; }
+
+.brandlogo {
+  background-image: url(../img/1LOGO.png);
+  background-size: contain;
+  display: block;
+  height: 70px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-indent: 110%;
+  width: 107px;
+  white-space: nowrap; }
+
+.r_menu {
+  float: right;
+  margin-top: 25px; }
+  .r_menu li {
+    box-sizing: border-box;
+    display: inline-block; }
+
+.r_menu > li > a, .submenu > li > a {
+  font-size: .8em;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  padding: 20px;
+  text-transform: uppercase; }
+
+.r_menu > li > a:hover, .submenu > li > a:hover {
+  color: green;
+  font-weight: 600;
+  transition: none; }
+
+.submenu > li > a {
+  font-size: .75em;
+  padding: 10px 20px; }
+
+ul.submenu {
+  background: white;
+  display: none;
+  min-width: 125px;
+  padding: 10px;
   position: absolute;
-  z-index: -1; }
-.think h5, .volko h5, .medical h5, .residential h5 {
-  padding: 50px 0px 15px 50px; }
-.think p, .volko p, .medical p, .residential p {
-  padding: 0 50px 30px 50px; }
+  z-index: 2; }
+
+.r_menu li:hover ul.submenu, .r_menu li ul.submenu li {
+  display: block; }
+
+.active {
+  font-weight: 400; }
+
+select {
+  display: none; }
+
+/*------------ footer ------------*/
+.footer {
+  background: #f0f0f0;
+  border-top: 2px solid #e6e6e6;
+  clear: both;
+  height: 50px; }
+
+.navfooter {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 87.5%; }
+
+.social {
+  float: left;
+  padding: 10px 0; }
+  .social ul {
+    list-style: none;
+    margin: 0 20px 0 0; }
+    .social ul li {
+      display: inline-block; }
+
+.fa-square {
+  color: #afafaf; }
+
+.r_footer {
+  float: right;
+  padding-top: 12px; }
+  .r_footer p {
+    margin-bottom: 0; }
+
+/*------------ media queries ------------*/
+@media (min-width: 1024px) {
+  .navfooter, .navmenu {
+    width: 1003.52px; }
+
+  hr.greydivider {
+    width: 40%; } }
+@media (max-width: 1024px) {
+  .navfooter, .navmenu {
+    width: 98%; }
+
+  .r_menu {
+    margin-left: 0; }
+
+  .r_menu > li > a, .submenu > li > a {
+    padding: 10px; } }
+@media (max-width: 640px) {
+  .r_menu {
+    display: none; }
+
+  select {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    width: 175px; }
+
+  .hidelarge {
+    display: block; }
+
+  .footer {
+    height: 100px; }
+
+  .social, .r_footer {
+    float: none;
+    text-align: center; } }
+@media (max-width: 400px) {
+  select {
+    width: 125px; } }
+.services {
+  margin-bottom: 30px; }
+
+.methodology {
+  background: url(../img/services_methodology.jpg);
+  background-size: cover;
+  padding: 0 0 0 35%; }
+
+.menuofservices {
+  background: url(../img/services_menu.jpg);
+  background-size: cover;
+  background-position: 10% 90%;
+  padding: 0 0 0 35%; }
+
+.think {
+  background: url(../img/portfolio_think.jpg);
+  background-size: cover;
+  padding: 30px; }
+
+.volko {
+  background: url(../img/portfolio_volvo.jpg);
+  background-size: cover;
+  padding: 30px; }
+
+.medical {
+  background: url(../img/portfolio_medical.jpg);
+  background-size: cover;
+  padding: 30px; }
+
+.residential {
+  background: url(../img/portfolio_residential.jpg);
+  background-size: cover;
+  padding: 30px; }
+
+h3.nobackheader {
+  font-size: 1.2em;
+  margin: 40px auto 0px auto;
+  text-align: center;
+  width: 80%; }
+
+h4.navbottomheader {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.slider h4 {
+  font-size: 1.25em;
+  margin-bottom: 20px; }
+
+.learnmore-btn {
+  background: url(../img/portfolio_mail.png), no-repeat;
+  height: 76px;
+  width: 94px;
+  margin: 0 auto 20px auto; }
+
+.contactus-btn {
+  background: url(../img/portfolio_people.png), no-repeat;
+  height: 76px;
+  width: 135px;
+  margin: 0 auto 20px auto; }
+
+.headertext {
+  text-align: center; }
+  .headertext a {
+    font-family: "Open Sans", sans-serif;
+    font-size: .9em;
+    padding: 15px 30px; }
+
+.frostedpane {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px 40px 20px 40px; }
+  .frostedpane h5 {
+    padding-bottom: 15px; }
+
+.slider {
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.85); }
+
+.slidetoggles {
+  float: right;
+  padding-left: 10px;
+  width: 20%; }
+  .slidetoggles a {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    width: 100%; }
+
+.slideshow {
+  float: left;
+  width: 80%; }
+
+.uswrap {
+  position: relative;
+  right: 0%;
+  width: 100%; }
+
+.uslogo {
+  background: url(../img/usgbc.png) no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 75px;
+  float: initial;
+  margin: 0px auto 30px auto; }
+
+@media (max-width: 960px) {
+  .slidetoggles {
+    display: flex;
+    float: none;
+    padding-left: 0px;
+    width: 100%; }
+    .slidetoggles a {
+      margin-left: 10px; }
+    .slidetoggles a:first-child {
+      margin-left: 0px; }
+
+  .slideshow {
+    width: 100%; } }
+@media (max-width: 640px) {
+  .slider h4 {
+    text-align: center; }
+
+  .slidetoggles {
+    display: inline; }
+    .slidetoggles a {
+      margin-left: 0px; }
+
+  .slideshow {
+    margin-top: 20px; }
+    .slideshow h5 {
+      text-align: center; }
+
+  .methodology, .menuofservices {
+    padding: 30px; } }
+@media (max-width: 500px) {
+  .frostedpane h5 {
+    padding-bottom: 15px;
+    text-align: center; }
+
+  .think, .volko, .medical, .residential {
+    padding: 40px 0px 30px 0; }
+
+  .frostedpane {
+    padding: 30px 20px 20px 20px; }
+
+  .methodology, .menuofservices {
+    padding: 30px 0; } }
 
 /*# sourceMappingURL=portfolio.css.map */

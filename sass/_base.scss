@@ -17,6 +17,7 @@ $primary-color-light: #43AC6A;
 $primary-color-dark: #368a55;
 $text-color: grey;
 $bold: 400;
+$bolder: 600;
 
 
 /***** basic elements *****/
@@ -32,6 +33,14 @@ h1,h2,h3,h4,p,a,li,body {
 
 p, a{
 	font-size:.85em;
+}
+
+.bold {
+	font-weight:$bold;
+}
+
+.bolder {
+	font-weight:$bolder;
 }
 
 /***** page code *****/
