@@ -213,6 +213,11 @@ h3.nobackheader {
   text-align: center;
   width: 80%; }
 
+h5 {
+  color: #368a55;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600; }
+
 h4.navbottomheader {
   font-size: 1.25em;
   margin-bottom: 20px;
@@ -223,15 +228,15 @@ h4.navbottomheader {
   margin-bottom: 20px; }
 
 .learnmore-btn {
-  background: url(../img/portfolio_mail.png), no-repeat;
-  height: 76px;
-  width: 94px;
-  margin: 0 auto 20px auto; }
-
-.contactus-btn {
   background: url(../img/portfolio_people.png), no-repeat;
   height: 76px;
   width: 135px;
+  margin: 0 auto 20px auto; }
+
+.contactus-btn {
+  background: url(../img/portfolio_mail.png), no-repeat;
+  height: 76px;
+  width: 94px;
   margin: 0 auto 20px auto; }
 
 .headertext {
@@ -277,6 +282,9 @@ h4.navbottomheader {
   float: initial;
   margin: 0px auto 30px auto; }
 
+@media (min-width: 1024px) {
+  .methodology, .menuofservices {
+    padding: 0 0 0 360px; } }
 @media (max-width: 960px) {
   .slidetoggles {
     display: flex;

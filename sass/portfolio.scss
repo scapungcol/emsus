@@ -1,7 +1,7 @@
 @import 'base';
 
 $font-stack: 'Open Sans', sans-serif;
-
+$primary-color-dark: #368a55;
 
 //MIN WIDTH @ 1024 PX
 
@@ -51,6 +51,12 @@ h3.nobackheader {
     width: 80%;
 }
 
+h5 {
+	color:$primary-color-dark;
+	font-family: $font-stack;
+	font-weight: 600;
+}
+
 h4.navbottomheader {
 	font-size: 1.25em;
 	margin-bottom: 20px;
@@ -63,16 +69,16 @@ h4.navbottomheader {
 }
 
 .learnmore-btn {
-	background: url(../img/portfolio_mail.png), no-repeat;
+    background: url(../img/portfolio_people.png), no-repeat;
     height: 76px;
-    width: 94px;
+    width: 135px;
     margin: 0 auto 20px auto;
 }
 
 .contactus-btn {
-	background: url(../img/portfolio_people.png), no-repeat;
+	background: url(../img/portfolio_mail.png), no-repeat;
     height: 76px;
-    width: 135px;
+    width: 94px;
     margin: 0 auto 20px auto;
 }
 
@@ -128,6 +134,13 @@ h4.navbottomheader {
     margin: 0px auto 30px auto;
 }
 
+@media (min-width:1024px) {
+	.methodology, .menuofservices {
+		padding: 0 0 0 360px;
+	}
+
+
+}
 
 @media (max-width:960px) {
 	.slidetoggles {
